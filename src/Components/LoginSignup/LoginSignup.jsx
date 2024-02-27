@@ -1,4 +1,5 @@
 import React,{ useEffect, useState } from 'react'
+import { Link } from "react-router-dom";
 import './LoginSignup.css'
 import user_icon from '../Assets/person.png'
 import email_icon from '../Assets/email.png'
@@ -31,7 +32,7 @@ const LoginSignup = () => {
         </div>
     </div>
 
-        {action==="Login" && <div className="option"><span>Lost Password?</span></div>}
+        {action==="Login" && <div className="option"><Link to="/forgot-password" className='link-styles'>Lost Password?</Link></div>}
         {action=== "Login" && <div className="option"><span onClick={()=>{setAction("Sign Up")}}>Dont' have an account?</span></div>}
         {action==="Sign Up" && <div className="option"><span onClick={()=>{setAction("Login")}}>Already have an account?</span></div>}
 

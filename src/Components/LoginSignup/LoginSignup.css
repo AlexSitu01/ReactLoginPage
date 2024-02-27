@@ -31,8 +31,8 @@
     border-radius: 9px;
 }
 
-.inuputs{
-    margin-top: 55px;
+.inputs{
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -64,7 +64,6 @@
     font-size: 19px;
 }
 
-
 .option{
     padding-left: 62px;
     margin-top: 27px;
@@ -75,10 +74,13 @@
     color: #068FFF;
     cursor: pointer;
 }
+.link-styles{
+    text-decoration: none;
+    color:#068FFF;
+}
 .submit-container{
     display: flex;
-    gap: 30px;
-    margin: 60px auto;
+    margin: 40px auto;
 
 }
 .submit{
@@ -95,7 +97,3 @@
     cursor: pointer;
 }
 
-.gray{
-    background: #EAEAEA;
-    color:#fff;
-}
